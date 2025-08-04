@@ -71,39 +71,32 @@ body {
 }
 
 .booking-button{
-  background-color: green;
+  background-color: rgb(7, 98, 7);
   border: none;
   padding: 15px 25px;
   color: white;
   border-radius: 50px;
-
-  margin-top: 10vw;
-  margin-bottom: 7vw;
-
   cursor: pointer;
   margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .introduction-div {
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 5px;
-
   text-align: center;
   padding: 20px 10px;
+  border: 2px solid black;
+  border-top-width: 0;
+
 }
 
   .intro-video video {
     width: 100%;
-    max-width: 470px;
+    max-width: 550px;
     height: auto;
   }
 
   .about-page {
     text-align: justify;
-
     margin-top: 10px;
   }
 
@@ -345,6 +338,7 @@ footer p {
 
   .about-page {
     flex: 1;
+    padding: 0 40px;
   }
 
   .our-services-div {
