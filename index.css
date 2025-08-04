@@ -54,22 +54,20 @@ body {
   margin-top: -7vw;
   margin-left: 37vw;*/
 
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: bold;
   margin-top: 0.2rem;
 }
 
 .page-description {
   color: green;
-
-  font-size: 17px;
+/*  font-size: 17px;
   font-weight: bold;
   margin-top: -6vw;
-  margin-left: 37vw;
-
+  margin-left: 37vw;*/
   font-size: 1rem;
   font-weight: 600;
-  margin: 0.5rem 0;
+  margin: -1.2rem 0 2rem 0;
 }
 
 .booking-button{
@@ -330,8 +328,9 @@ footer p {
 /* Desktops */
 @media screen and (min-width: 1024px) {
   .main-heading-div {
-    align-items: flex-start;
     padding: 20px;
+    text-align: center;
+    align-items: center;
   }
 
   .introduction-div {
