@@ -26,7 +26,6 @@ body {
   max-height: 350px;
   position: relative;
   width: 100%;
-  overflow: hidden;
 }
 
 .heading-photo {
@@ -39,30 +38,25 @@ body {
 }
 
 .icon {
-  width: 20vw;
-
-  border-radius: 10vw;
-  margin-top: -50px;
-  margin-left: 15px;
-
+  width: 18vw;
   position: absolute;
-  max-width: 100px;
+  max-width: 120px;
   border-radius: 50%;
-  top: 70%;
-  left: 10px;
+  top: 5%;
+  right: 5%;
 }
 
 .page-name {
   color: rgb(11, 105, 11);
 
-  font-size: 27px;
+/*  font-size: 27px;
   font-weight: bolder;
   margin-top: -7vw;
-  margin-left: 37vw;
+  margin-left: 37vw;*/
 
   font-size: 1.5rem;
   font-weight: bold;
-  margin-top: 1rem;
+  margin-top: 0.2rem;
 }
 
 .page-description {
