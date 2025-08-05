@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding-bottom: 20px;
 }
 
 .page-container {
@@ -30,9 +31,6 @@ body {
 
 .heading-photo {
   width: 100%;
-
-/*  height: 80%;*/
-
   height: auto;
   border-radius: 50px 0 50px 0;
 }
@@ -160,122 +158,79 @@ body {
 
 .nuru-play {
   text-align: justify;
-
-  justify-items: center;
-
   padding: 20px;
 }
-/*  .nuru-play h2 {
-    margin-bottom: 3px;
+  .nuru-play h2 {
+    margin-bottom: 5px;
   }
   .nuru-play h4 {
-    margin-top: 0;
-    margin-bottom: -5px;
+    margin-top: 5px;
   }
-*/
-.nuru-play h2,
-.nuru-play h4 {
-  text-align: center;
-}
+
+  .nuru-play h2,
+  .nuru-play h4 {
+    text-align: center;
+  }
 
 .knowing {
   text-align: justify;
-
   justify-items: center;
-
   padding: 20px;
 }
  /*.knowing h3 {
     margin-bottom: 0;
   }*/
 
-.contact-us {
- /* justify-items: center;*/
-
-  text-align: center;
-  padding: 20px;
-}
-
-.contact-us button {
-  padding: 10px 25px;
-  background-color: green;
-  border: none;
-  border-radius: 20px;
-
-  color: white;
-  margin: 5px;
-  cursor: pointer;
-}
-
 .gallery {
   text-align: center;
   padding: 20px;
 }
 
+.contact-us {
+  text-align: center;
+}
+
+.contact-us p {
+  margin-top: -10px;
+}
+
+.contact-us button {
+  padding: 15px 35px;
+  background-color: green;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  margin: 5px 15px;
+  cursor: pointer;
+}
+
 footer {
   margin-top: 40px;
   text-align: center;
-  background-color: antiquewhite;
-  padding: 20px;
+  background-color: antiquewhite; 
 }
 
-.footer-photo1-div{
-/*  height: 35vw;
-  object-fit: contain;
-  max-height: 300px;*/
 
+.footer-div{
   position: relative;
-}
-
-.footer-photo {
   width: 100%;
-  height: 80%;
-  border-bottom-right-radius: 50px;
-  border-top-left-radius: 50px;
-
-  height: auto;
-  border-radius: 50px 0 50px 0;
+  padding: 10px 0 30px 0;
 }
 
-.footer-icon {
-  width: 20vw;
-
-  border-radius: 10vw;
-  margin-top: -50px;
-  margin-left: 15px;
-
-  max-width: 100px;
-  border-radius: 50%;
+footer img {
+  width: 25vw;
   position: absolute;
-  top: 70%;
-  left: 10px;
-}
-/*
-.page-footer {
-  color: rgb(11, 105, 11);
-  font-size: 27px;
-  font-weight: bolder;
-  margin-top: -7vw;
-  margin-left: 37vw;
-}
-
-.description-footer {
-  color: green;
-  font-size: 17px;
-  font-weight: bold;
-  margin-top: -6vw;
-  margin-left: 37vw;
-} */
-
-footer h3 {
-  margin-top: 2rem;
-  color: rgb(11, 105, 11);
+  max-width: 120px;
+  border-radius: 50%;
+  top: -50%;
+  left: 5%;
 }
 
 footer p {
-  color: green;
-  font-weight: 600;
+  font-size: large;
 }
+
+
 
 /* -------------------- Responsive Design -------------------- */
 
