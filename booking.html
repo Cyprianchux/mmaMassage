@@ -12,8 +12,14 @@
       <div class="heading-photo1-div">
         <img class="heading-photo" src="photos/mma-header.png" alt="Photo of massage towels">
 
-        <img class="icon" src="photos/mma-icon.png" alt="MmaMassage icon">
+        <div class="home-toggle">
+          <a href="index.html"><button class="nav-toggle">☰</button></a>
+          <div class="tool-tip">Back to Home</div>
+        </div>
+
+        <a href="index.html"><img class="icon" src="photos/mma-icon.png" alt="MmaMassage icon"></a>
       </div>
+
       <h2>Book a Massage Session</h2>
       <form class="booking-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
         <label for="name">Full Name</label>
@@ -38,5 +44,24 @@
       </form>
     </div>
   </div>
+
+  <footer>
+    <div class="footer-div">
+      <img src="photos/PHOTO-2025-06-24-19-01-30.jpg" alt="mma logo">
+      <p>&copy; 2025 MMA Massage NG</p>
+      <nav>
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="cookies.html">Cookies</a> |
+        <a href="terms.html">Terms of Service</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById("navLinks");
+      navLinks.classList.toggle("show");
+    }
+  </script>
 </body>
 </html>
