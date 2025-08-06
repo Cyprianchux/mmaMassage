@@ -12,18 +12,31 @@
       <div class="heading-photo1-div">
         <img class="heading-photo" src="photos/mma-header.png" alt="Photo of massage towels">
 
+        <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+        <nav class="navbar">
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#services">Services</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of service</a></li>
+          </ul>
+        </nav>
+
         <img class="icon" src="photos/mma-icon.png" alt="MmaMassage icon">
       </div>
 
-      <p class="page-name">
-        MMA MASSAGE NG
-      </p>
-      <p class="page-description">
-        Luxury Mobile Massage Tailored To Your Unique Needs
-      </p>
-      
+      <div class="brand-name">
+        <p class="page-name">
+          MMA MASSAGE NG
+        </p>
+        <p class="page-description">
+          Luxury Mobile Massage Tailored To Your Unique Needs
+        </p>
+      </div>
+
       <div class="heading-texts">
-        <button>Book A Session</button>
+        <a href="booking.html"><button>Book A Session</button></a>
+        
       </div>
     </div>
 
@@ -69,7 +82,7 @@
 
     <div class="our-services-box">
       <h2 class="h2">Our Services</h2>
-    <div class="our-services-div">
+    <div class="our-services-div" id="services">
       <div class="our-services">
         <img src="photos/PHOTO-2025-06-24-18-51-24.jpg" alt="Back massage">
         <p>
@@ -201,10 +214,37 @@ Clients who fail to show up without prior notice will be charged 100% of the ser
 
   <footer>
     <div class="footer-div">
-    <img src="photos/PHOTO-2025-06-24-19-01-30.jpg" alt="mma logo">
-
-    <p>&copy MmaMassageNg 2025</p>
+      <img src="photos/PHOTO-2025-06-24-19-01-30.jpg" alt="mma logo">
+      <p>&copy; 2025 MMA Massage NG</p>
+      <nav>
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="cookies.html">Cookies</a> |
+        <a href="terms.html">Terms of Service</a>
+      </nav>
     </div>
   </footer>
+
+  <div id="cookie-banner" style="position:fixed; bottom:0; left:0; right:0; background:#222; color:#fff; padding:15px; text-align:center; display:none;">
+    We use cookies to enhance your experience. See our <a href="cookies.html" style="color:#4dc9ff;">Cookies Policy</a>.
+    <button onclick="acceptCookies()" style="margin-left:15px;">Accept</button>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById("navLinks");
+      navLinks.classList.toggle("show");
+    }
+
+    function acceptCookies() {
+      localStorage.setItem('cookiesAccepted', 'true');
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+
+    window.onload = function() {
+      if (!localStorage.getItem('cookiesAccepted')) {
+        document.getElementById('cookie-banner').style.display = 'block';
+      }
+    };
+  </script>
 </body>
 </html>
