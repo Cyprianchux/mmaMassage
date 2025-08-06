@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book a Session - MmaMassageNG</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="page-container">
+    <div class="main-heading-div">
+      <div class="heading-photo1-div">
+        <img class="heading-photo" src="photos/mma-header.png" alt="Photo of massage towels">
+
+        <img class="icon" src="photos/mma-icon.png" alt="MmaMassage icon">
+      </div>
+      <h2>Book a Massage Session</h2>
+      <form class="booking-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label for="name">Full Name</label>
+        <input type="text" name="name" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="phone" required />
+
+        <label for="email">Email</label>
+        <input type="email" name="email"/>
+
+        <Label for="Date">Date</Label>
+        <input type="date" name="date" required>
+
+        <label for="time">Time</label>
+        <input type="time" name="time" required>
+
+        <label for="message">State your PREFERRED LOCATION with the day and time</label>
+        <textarea name="message" rows="4" placeholder="E.g. Saturday 4PM at Golden Tulip Hotel, Owerri." required></textarea>
+
+        <button type="submit">Submit Booking</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
