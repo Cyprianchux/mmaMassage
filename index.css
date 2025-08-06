@@ -17,7 +17,6 @@ body {
   border: 2px solid black;
   border-top-left-radius: 52px;
   padding: 2px;
-
   text-align: center;
   align-items: center;
 }
@@ -43,18 +42,26 @@ body {
   right: 5%;
 }
 
+.brand-name {
+  margin-top: -1.5rem;
+  width: 100%;
+  padding-right: 4rem;
+}
+
 .page-name {
   color: rgb(7, 70, 7);
   font-size: 1.7rem;
   font-weight: bold;
-  margin-top: 0.2rem;
+  text-align: right;
 }
 
 .page-description {
   color: rgb(19, 82, 19);
   font-size: 1rem;
   font-weight: 600;
-  margin: -1.2rem 0 2rem 0;
+  margin-top: -1.5rem;
+  margin-bottom: 2rem;
+  text-align: right;
 }
 
 button{
@@ -246,6 +253,18 @@ footer img {
 
 footer p {
   font-size: large;
+  font-weight: bold;
+  color: rgb(7, 70, 7);
+}
+
+footer nav a {
+  margin: 0 10px;
+  color: rgb(7, 70, 7);
+  text-decoration: none;
+}
+
+footer nav a:hover {
+  color: rgb(120, 118, 118);
 }
 
 /* Tablet screen size*/
@@ -315,7 +334,7 @@ footer p {
   }
 }
 
-/* ======== booking page css codes ======= */
+/*  BOOKING PAGE CSS CODES  */
 
 .booking-form {
   display: flex;
@@ -333,3 +352,103 @@ footer p {
   margin-bottom: 10px;
 }
 
+/*  NAVIGATION CSS CODES  */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 20px 0 30px;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  margin-left: 10px;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0 0 0 2.5rem;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 0px 5px;
+}
+
+.nav-links a:hover {
+  font-size: large;
+  color: bisque;
+  transition: 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: row;
+    width: 20%;
+    position: absolute;
+    top: 1.2rem;
+    left: 2rem;
+    padding: 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
+.legal-box {
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: blanchedalmond;
+  color: rgb(5, 76, 5);
+  padding: 15px  20px;
+}
+
+.legal-box h1, .p-date {
+  text-align: center;
+}
+
+.home-toggle .tool-tip {
+  position: absolute;
+  top: 2.5rem;
+  left: 5rem;
+  color: white;
+  background-color: #cccccc86;
+  border-radius: 5px;
+  padding: 3px 10px;
+  opacity: 0;
+  transition: opacity 0.15s ease-in;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.home-toggle:hover .tool-tip{
+  opacity: 1;
+}
+@media screen and (min-width: 768px) {
+  .home-toggle .nav-toggle {
+    display: block;
+  }
+}
