@@ -1,6 +1,10 @@
 body {
   margin: 0;
+  background-color: #ccc;
+  user-select: none;
 }
+
+
 
 .page-container {
   justify-items: center;
@@ -8,6 +12,8 @@ body {
   padding: 10px 2vw;
   margin: auto;
   max-width: 700px;
+  background-color: azure;
+  border-radius: 50px 0 10px 10px;
 }
 
 .main-heading-div {
@@ -316,7 +322,7 @@ footer nav a:hover {
   }
 
   .our-services-div {
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .heading-photo1-div {
@@ -342,6 +348,11 @@ footer nav a:hover {
   gap: 10px;
   max-width: 500px;
   margin: auto;
+  color: rgb(7, 70, 7);
+}
+
+.booking-div {
+  color: rgb(7, 70, 7);
 }
 
 .booking-form input,
@@ -489,3 +500,15 @@ footer nav a:hover {
   transition: color 0.3s ease;
 }
 
+.cookie-banner {
+  position: fixed; 
+  bottom: 8vw; 
+  left: auto; 
+  right: auto; 
+  background-color: #222; 
+  border-radius: 10px;
+  color: #fff; 
+  padding: 20px 20px 0 20px; 
+  text-align: center; 
+  display: none;
+}
