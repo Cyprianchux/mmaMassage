@@ -247,6 +247,26 @@ text-align: center;
   box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
 }
 
+.countdown-section {
+  text-align: center;
+  margin: 2rem auto;
+  color: blue;
+}
+
+.countdown-section p {
+  font-weight: bold;
+}
+
+.countdown-timer {
+  font-size: 4rem;
+  font-weight: bold;
+  color: whitesmoke;
+  background-color: rgb(197, 7, 7);
+  border-radius: 8px;
+  box-shadow: 0 4px 13px rgba(34, 34, 34, 0.5);
+  margin-bottom: 20px;
+}
+
 
 .gallery {
   text-align: center;

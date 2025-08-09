@@ -215,8 +215,14 @@ Cancellations made less than 12 hours in advance will incur a 50% cancellation f
       </div>
     </section>
 
-    
+    <section class="countdown-section">
+      <h2>Book Before the Day Ends!</h2>
+      <p>Time left today:</p>
+      <div id="countdown" class="countdown-timer">00:00:00</div>
 
+      <a href="booking.html"><button>Book A Session Now</button></a>
+    </section>
+    
     <div class="gallery">
       <h2>Video Gallery</h2>
       <p>Experience the soothing art of mobile massage therapy with MMA Massage.ng</p>
@@ -290,6 +296,29 @@ Cancellations made less than 12 hours in advance will incur a 50% cancellation f
       });
     });
 
+    function startCountdown() {
+      function updateCountdown() {
+        const now = new Date();
+        const midnight = new Date();
+        midnight.setHours(23, 59, 59, 999);
+
+        const diff = midnight - now;
+
+        const hours = Math.floor(diff / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        document.getElementById('countdown').textContent =
+          `${hours.toString().padStart(2, '0')}:` +
+          `${minutes.toString().padStart(2, '0')}:` +
+          `${seconds.toString().padStart(2, '0')}`;
+      }
+
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+    }
+
+    startCountdown();
   </script>
 </body>
 </html>
