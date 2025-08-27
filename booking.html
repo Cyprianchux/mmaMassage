@@ -22,7 +22,7 @@
 
       <h2>Book a Massage Session</h2>
       <form class="booking-form" action="https://formspree.io/f/xkgzyvrg" method="POST" target="_blank">
-        <label for="name">Full Name</label>
+        <label for="name">Name</label>
         <input type="text" name="name" required />
 
         <label for="phone">Phone Number</label>
@@ -31,16 +31,18 @@
         <label for="email">Email</label>
         <input type="email" name="email"/>
 
-        <Label for="Date">Date</Label>
+        <Label for="Date">Pick a convenient DATE</Label>
         <input type="date" name="date" required>
 
-        <label for="time">Time</label>
+        <label for="time">Choose your convenient TIME</label>
         <input type="time" name="time" required>
 
-        <label for="message">State your PREFERRED LOCATION with the day and time</label>
+        <label for="message">State your PREFERRED LOCATION with day and time</label>
         <textarea name="message" rows="4" placeholder="E.g. Saturday 4PM at mmmMassage Hotel, Owerri." required></textarea>
 
-        <div><button type="submit">Submit Booking</button></div>
+        <div><button type="submit" onclick="
+          alert('By booking a massage session you AGREE to our TERMS OF SERVICE.')
+        ">Submit Booking</button></div>
       </form>
     </div>
   </div>
