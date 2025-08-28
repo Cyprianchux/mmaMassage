@@ -3,7 +3,7 @@
 This is the official website for **MMA Massage NG**, a professional massage therapy service designed to provide clients with an easy and responsive way to learn about our services, watch therapy sessions, and book appointments directly.
 
 ## 📁 Project Structure
-
+```
 mmaMassage/
 ├── index.html # Homepage
 ├── booking.html # Booking page
@@ -13,6 +13,7 @@ mmaMassage/
 ├── styles.css # Main CSS styling
 ├── videos/ # Folder for therapy session videos
 └── photos/ # Folder for photos of services
+```
 
 ## 🧩 Features
 
