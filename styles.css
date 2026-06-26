@@ -301,7 +301,9 @@ footer {
   height: 100px;
   margin-top: 40px;
   text-align: center;
-  background-color: bisque; 
+  background-color: bisque;
+  border: 2px solid black;
+  border-radius: 0 0 10px 10px;
 }
 
 .footer-div{
@@ -317,13 +319,15 @@ footer img {
   top: -50%;
   right: 5%;
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 0.3s;
+  border: 2px solid rgb(7, 98, 7);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
 }
 
 footer p {
   font-size: large;
   font-weight: bold;
-  color: rgb(7, 70, 7);
+  color: rgb(7, 98, 7);
 }
 
 footer nav a {
@@ -463,19 +467,18 @@ footer nav a:hover {
   list-style: none;
   display: flex;
   gap: 1rem;
-  margin: 0 0 0 2.5rem;
+  margin: 0 0 0 1rem;
   padding: 0;
 }
 
 .nav-links li a {
   text-decoration: none;
   color: white;
-  font-weight: bold;
+  font-size: large;
   padding: 0px 5px;
 }
 
 .nav-links a:hover {
-  font-size: large;
   color: bisque;
   transition: 0.3s ease;
 }
@@ -483,12 +486,15 @@ footer nav a:hover {
 @media screen and (max-width: 768px) {
   .nav-links {
     display: none;
-    flex-direction: row;
-    width: 20%;
+    flex-direction: column;
+    width: 30%;
     position: absolute;
-    top: 1.2rem;
-    left: 2rem;
-    padding: 0;
+    top: 1rem;
+    left: 25%;
+    padding: 5px 0;
+    gap: 1.5rem;
+    background-color: rgba(41, 39, 37, 0.518);
+    border-radius: 8px;
   }
 
   .nav-links.show {
