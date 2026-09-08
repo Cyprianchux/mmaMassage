@@ -3,297 +3,333 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MMA Massage NG</title>
+  <meta name="description" content="MMA Massage NG - Luxury mobile massage delivered to your home, office or hotel in Owerri. Certified therapists, tailored to your needs.">
+  <title>MMA Massage NG | Luxury Mobile Massage in Owerri</title>
   <link rel="icon" href="photos/mma-icon.png" type="image/png" sizes="512x512">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <div class="page-container">
-    <div class="main-heading-div">
-      <div class="heading-photo1-div">
-        <img class="heading-photo" src="photos/mma-header.png" alt="Photo of massage towels">
+<body id="top">
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#top" class="brand-logo" aria-label="MMA Massage NG home">
+        <img src="photos/mma-icon.png" alt="MMA Massage NG logo">
+        <span class="brand-wordmark">MMA MASSAGE <span>NG</span></span>
+      </a>
+      <button class="nav-toggle" onclick="toggleMenu()" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="booking.html" class="nav-cta">Book Now</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <button class="nav-toggle" onclick="toggleMenu()">☰</button>
-        <nav class="navbar">
-          <ul class="nav-links" id="navLinks">
-            <li><a href="#services">Services</a></li>
-            <li><a href="booking.html">Book Now</a></li>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="terms.html">Terms of service</a></li>
-          </ul>
-        </nav>
-
-        <img class="icon" src="photos/mma-icon.png" alt="MmaMassage icon">
-      </div>
-
-      <div class="brand-name">
-        <p class="page-name">
-          MMA MASSAGE NG
-        </p>
-        <p class="page-description">
-          Luxury Mobile Massage Tailored To Your Unique Needs
-        </p>
-      </div>
-
-      <div class="heading-texts">
-        <a href="booking.html"><button>Book A Session</button></a>
-      </div>
-    </div>
-
-    <div class="introduction-div">
-      <div class="page-video">
-        <video src="videos/VIDEO-2025-06-24-18-02-18.mp4" width="470" controls autoplay muted loop playsinline>Video type not supported</video>
-      </div>
-      <p class="about-page">
-        ‌At MMA Massage, we specialize in luxury mobile massage services delivered right to your home, office, or hotel in Owerri. Whether you’re looking to unwind, recover from stress, or simply indulge in self-care, our certified massage therapists bring relaxation, relief, and rejuvenation to your doorstep.
-      </p>
-      <p class="about-page">
-        ‌We offer a range of massage treatments tailored to your unique needs — from Swedish and deep tissue massages to prenatal care and aromatherapy sessions. Each session is customized to restore balance in your body and peace to your mind. No traffic. No stress. Just pure relaxation. 
-      </p>
-    </div>
-    <div class="whyMMA-div">
-      <h2>Why choose MMA MASSAGE?</h2>
-      <div class="whyMMA">
-        <img class="icon1" src="photos/massage-icon3.jpg" alt="Massage icon">
-        <h3>Professional & Certified Therapists</h3>
-        <p>Enjoy professional massage therapy from our certified therapists.</p>
-      </div>
-      <div class="whyMMA">
-        <img class="icon1" src="photos/mobile-service.png" alt="Mobile service icon">
-        <h3>Mobile Service</h3>
-        <p>We come to you in the comfort of your own home, hotel, or office.</p>
-      </div>
-      <div class="whyMMA">
-        <img class="icon1" src="photos/massage oil.png" alt="Natural oil picture">
-        <h3>Natural Oils & Healing Techniques</h3>
-        <p>We prioritize your health and comfort while keeping your skin moisturized.</p>
-      </div>
-      <div class="whyMMA" >
-        <img class="icon1" src="photos/calender-icon.png" alt="Calender-icon">
-        <h3>Flexible Appointments and Scheduling</h3>
-        <p>Book appointments at your convenience. We work around your busy schedule - Evenings and Weekends Available.</p>
-      </div>
-      <div class="whyMMA">
-        <img class="icon1" src="photos/massage-icon4.jpg" alt="Massage icon">
-        <h3>Customized Therapy</h3>
-        <p>Tailored massages to meet your specific needs and preferences.</p>
-      </div>
-    </div>
-
-    <div class="our-services-box" id="services">
-      <h2 class="h2">Our Services</h2>
-    <div class="our-services-div">
-      <div class="our-services">
-        <img src="photos/PHOTO-2025-06-24-18-51-24.jpg" alt="Back massage">
-        <p>
-          Relaxation massage:
-          Gentle to firm pressure and long, flowing strokes to promote relaxation and improve circulation.
-        </p>
-      </div>
-
-      <div class="our-services">
-        <img src="photos/PHOTO-2025-06-24-18-59-50.jpg" alt="Hand massage">
-        <p>
-          Relaxation/stress relief massage:
-          Gentle massage to promote relaxation and improve circulation.
-        </p>
-      </div>
-
-      <div class="our-services">
-        <img src="photos/PHOTO-2025-06-24-19-00-04.jpg" alt="Body massage">
-        <p>
-          Pain relief | Muscle release massage:
-          Indulge in a moment of pure relaxationwith our expertly crafted pain relief and muscle release massage sessions.
-        </p>
-      </div>
-      <div class="our-services">
-        <img src="photos/PHOTO-2025-06-24-19-00-19.jpg" alt="Towel and candle">
-        <p>
-          Comfortable massage environment:
-          Enhance and promote relaxation and mental clarity.
-        </p>
-      </div>
-      <div class="our-services">
-        <img src="photos/PHOTO-2025-06-24-19-03-08.jpg" alt="Massage Oils">
-        <p>
-          Massage Oils:
-          Moisturize the skin, enhance relaxationand delivers therapeutic benefits.
-        </p>
-      </div>
-      <div class="our-services">
-        <img src="photos/back-massage.webp" alt="Back massage">
-        <p>
-          Deep tissue massage:
-          Revitalize your body and relieve tension with our deep tissue massge services delivered to your doorstep.
-        </p>
-      </div>
-      <div class="our-services">
-        <img src="photos/foot-massage.png" alt="Foot massage">
-        <p>
-          Foot reflexology:
-          Gentle to firm pressure nd long, flowing strokes to promote relaxation and improve circulation.
-        </p>
-      </div>
-    </div>
-    <div class="nuru-play">
-      <h2>
-        18+ NURU PLAY
-      </h2>
-      <h4>
-        ‌Sensual. Slippery. Unforgettable.
-      </h4>
-      <p>
-        Step into a world of deep connection and silky pleasure with our exclusive <b>Nuru massage</b>. Using a special, warm gel that feels like skin on skin, our therapist uses their entire body in long, flowing movements that awaken your senses and dissolve all tension. This is not just a massage — it’s a full-body escape where touch becomes therapy, and pleasure meets deep relaxation. <br>
-‌•🌿 Body-to-body contact with warm Nuru gel <br>
-‌•🧴 Slow, sensual flow that relaxes every nerve <br>
-‌•🔥 Perfect for adults seeking luxury, intimacy, and release <br>
-‌•🕯️ Discreet and professional — your privacy is guaranteed.
-<p><b>‌Strictly 18+</b></p>
-      </p>
-    </div>
-    </div>
-
-    <section class="faq" id="faq">
-      <h2>All You Need to Know</h2>
-      <div class="faq-item">
-        <button class="faq-question">Why choose Mma Massage mobile massage?</button>
-        <div class="faq-answer">
-          <p>At MMA Massage, we bring peace, healing, and expert care right to your doorstep. You can trust our professional, certified, and discreet therapists to provide you with the comfort you need.</p>
-        </div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question">What are the benefits of mobile massage?</button>
-        <div class="faq-answer">
-          <p>Mobile massage offers convenience, comfort, and personalized service in the comfort of your own space. Whether you’re at home, in a hotel, or at your workplace, our mobile massage service is designed to fit your lifestyle, with comfort and convenience in mind.</p>
-        </div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question">What types of massages are offered?</button>
-        <div class="faq-answer">
-          <p>MMA Massage offers a variety of massages, including Swedish, relaxation, deep tissue, foot reflexology, and more.</p>
-        </div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question">How do I book a massage session?</button>
-        <div class="faq-answer">
-          <p>You can easily book a session by contacting us via direct phone call or chatting with us on WhatsApp by clicking on the call button on the page, email, or through any of our social media handles.</p>
-        </div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question">How to prepare for your massage session?</button>
-        <div class="faq-answer">
-          <p>Here are a few things to keep in mind before your session: 
-<br>🕒 Be On Time: Please be ready 10–15 minutes before your appointment. This helps us start promptly and use your full time for the massage.
-<br>🛏️ Prepare Your Space: Make sure there’s a clean, quiet area for the massage. A bed or firm mat works well. Clear distractions for a peaceful session.
-<br>🚿 Freshen Up: A quick shower before your massage helps you feel refreshed and enhances your comfort.
-<br>📱 Limit Distractions: Put your phone on silent and let others know you’ll be unavailable. This is your me-time.
-<br>👚 Wear Something Comfortable Loose, easy-to-remove clothing is best. You’ll be properly covered during the session — your comfort is our priority.
-<br>🤝 Health & Preferences: Let us know about any allergies, injuries, or areas to avoid so we can tailor your massage to your needs.
-<br>❌ Respect Is Key: At MmaMassage.ng, we provide strictly professional services. Any inappropriate behavior will result in immediate cancellation.
-</p>
-        </div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question">Is there a re-scheduling or cancellation policy?</button>
-        <div class="faq-answer">
-          <p>Yes, please provide at least 12 hours notice if you need to cancel or reschedule your appointment. You can reschedule your session up to 12 hours before the appointment without any penalty. Rescheduling within 12 hours of your booking may attract a rescheduling fee or be treated as a late cancellation.
-Cancellations made less than 12 hours in advance will incur a 50% cancellation fee. This helps us manage bookings fairly and compensate our therapists for their reserved time.</p>
-        </div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question">What happens when the client does not show up after booking?</button>
-        <div class="faq-answer">
-          <p>Clients who fail to show up without prior notice will be charged 100% of the service fee. No-shows affect our schedule and prevent others from booking that time slot.</p>
+  <main>
+    <section class="hero">
+      <img class="hero-img" src="photos/mma-header.png" alt="Pristine massage towels on a bed">
+      <div class="hero-content">
+        <img class="hero-logo" src="photos/mma-icon.png" alt="MMA Massage NG icon">
+        <h1>MMA MASSAGE NG</h1>
+        <p>Luxury Mobile Massage Tailored To Your Unique Needs</p>
+        <div class="hero-actions">
+          <a href="booking.html" class="btn btn-primary">Book A Session</a>
+          <a href="#services" class="btn btn-outline">Explore Services</a>
         </div>
       </div>
     </section>
 
-    <section class="map-section">
-      <h2>Locate Us</h2>
-      <div class="map-container">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.491592492226!2d7.034444510936757!3d5.493762940791884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1042594e130ced29%3A0xb226e4da32247571!2sMMA%20Massage%20NG!5e0!3m2!1sen!2sng!4v1754753623769!5m2!1sen!2sng" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section class="section">
+      <div class="about-grid">
+        <div class="about-video">
+          <video src="videos/VIDEO-2025-06-24-18-02-18.mp4" controls autoplay muted loop playsinline>Video type not supported</video>
+        </div>
+        <div class="about-text">
+          <h2 class="section-title section-title-left">Relaxation, Delivered</h2>
+          <p>At MMA Massage, we specialize in luxury mobile massage services delivered right to your home, office, or hotel in Owerri. Whether you're looking to unwind, recover from stress, or simply indulge in self-care, our certified massage therapists bring relaxation, relief, and rejuvenation to your doorstep.</p>
+          <p>We offer a range of massage treatments tailored to your unique needs — from Swedish and deep tissue massages to prenatal care and aromatherapy sessions. Each session is customized to restore balance in your body and peace to your mind. No traffic. No stress. Just pure relaxation.</p>
+        </div>
       </div>
     </section>
 
-    <section class="countdown-section">
-      <h2>Book Before the Day Ends!</h2>
-      <p>Time left today:</p>
-      <div id="countdown" class="countdown-timer">00:00:00</div>
-
-      <a href="booking.html"><button>Book A Session Now</button></a>
+    <section class="section" id="why">
+      <h2 class="section-title">Why choose MMA MASSAGE?</h2>
+      <p class="section-sub">A premium, professional massage experience designed around you.</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <img src="photos/massage-icon3.jpg" alt="Professional massage icon">
+          <h3>Professional & Certified Therapists</h3>
+          <p>Enjoy professional massage therapy from our certified therapists.</p>
+        </div>
+        <div class="feature-card">
+          <img src="photos/mobile-service.png" alt="Mobile service icon">
+          <h3>Mobile Service</h3>
+          <p>We come to you in the comfort of your own home, hotel, or office.</p>
+        </div>
+        <div class="feature-card">
+          <img src="photos/massage oil.png" alt="Natural massage oil picture">
+          <h3>Natural Oils & Healing Techniques</h3>
+          <p>We prioritize your health and comfort while keeping your skin moisturized.</p>
+        </div>
+        <div class="feature-card">
+          <img src="photos/calender-icon.png" alt="Calendar icon">
+          <h3>Flexible Appointments & Scheduling</h3>
+          <p>Book at your convenience. We work around your busy schedule — evenings and weekends available.</p>
+        </div>
+        <div class="feature-card">
+          <img src="photos/massage-icon4.jpg" alt="Customized massage icon">
+          <h3>Customized Therapy</h3>
+          <p>Tailored massages to meet your specific needs and preferences.</p>
+        </div>
+      </div>
     </section>
-    
-    <div class="gallery">
-      <h2>Video Gallery</h2>
-      <p>Experience the soothing art of mobile massage therapy with MMA Massage.ng</p>
-      <video class="page-video" src="videos/VIDEO-2025-06-24-18-31-08.mp4" width="470" controls>
-        Hand Massage video
-      </video>
-      <video src="videos/feet-massage.mp4" width="470" controls>Foot massage video</video>
-      <video src="videos/VIDEO-2025-07-03-17-00-54.mp4" height="408px" controls>Back massage video</video>
-      <video src="videos/client-massage.mp4" height="408px" controls>Client massage video</video>
-    </div>
 
-    <div class="contact-us" id="contact">
-      <h3>Contact Us</h3>
-      <p>For your booking and enquiries</p>
-      <a href="tel:+2349040388798"><button>Call Us</button></a>
-      <a href="https://wa.me/2349040388798" target="_blank"><button>WhatsApp Us</button></a>
-      <a href="mailto:mmamassage@gmail.com"><button>Email Us</button></a>
-    </div>
+    <section class="section" id="services">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-sub">Every treatment is performed by certified professionals using natural oils — in the comfort of your own space.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="photos/PHOTO-2025-06-24-18-51-24.jpg" alt="Back massage">
+          <div class="service-card-body">
+            <h3>Relaxation Massage</h3>
+            <p>Gentle to firm pressure and long, flowing strokes to promote relaxation and improve circulation.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="photos/PHOTO-2025-06-24-18-59-50.jpg" alt="Hand massage">
+          <div class="service-card-body">
+            <h3>Stress Relief Massage</h3>
+            <p>Gentle massage to promote relaxation, ease tension, and improve circulation.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="photos/PHOTO-2025-06-24-19-00-04.jpg" alt="Body massage">
+          <div class="service-card-body">
+            <h3>Pain Relief & Muscle Release</h3>
+            <p>Indulge in a moment of pure relaxation with our expertly crafted pain relief and muscle release sessions.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="photos/PHOTO-2025-06-24-19-00-19.jpg" alt="Towel and candle massage environment">
+          <div class="service-card-body">
+            <h3>Comfortable Massage Environment</h3>
+            <p>We enhance and promote relaxation and mental clarity in a calm, professional setting.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="photos/PHOTO-2025-06-24-19-03-08.jpg" alt="Massage oils">
+          <div class="service-card-body">
+            <h3>Therapeutic Massage Oils</h3>
+            <p>Moisturize the skin, enhance relaxation, and deliver therapeutic benefits.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="photos/back-massage.webp" alt="Deep tissue back massage">
+          <div class="service-card-body">
+            <h3>Deep Tissue Massage</h3>
+            <p>Revitalize your body and relieve tension with our deep tissue massage services delivered to your doorstep.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="photos/foot-massage.png" alt="Foot massage">
+          <div class="service-card-body">
+            <h3>Foot Reflexology</h3>
+            <p>Gentle to firm pressure and long, flowing strokes to promote relaxation and improve circulation.</p>
+          </div>
+        </div>
+      </div>
 
-  <footer>
-    <div class="footer-div">
-      <img src="photos/PHOTO-2025-06-24-19-01-30.jpg" alt="mma logo">
-      <p>&copy; 2025 MMA Massage NG</p>
-      <nav>
-        <a href="privacy.html">Privacy Policy</a> |
-        <a href="cookies.html">Cookies</a> |
-        <a href="terms.html">Terms of Service</a>
-      </nav>
+      <div class="nuru-banner">
+        <span class="nuru-pill">18+ EXPERIENCE</span>
+        <h2>NURU PLAY</h2>
+        <h4>Sensual. Slippery. Unforgettable.</h4>
+        <p>Step into a world of deep connection and silky pleasure with our exclusive <b>Nuru massage</b>. Using a special, warm gel that feels like skin on skin, our therapist uses their entire body in long, flowing movements that awaken your senses and dissolve all tension. This is not just a massage — it's a full-body escape where touch becomes therapy, and pleasure meets deep relaxation.</p>
+        <ul class="nuru-list">
+          <li>🌿 Body-to-body contact with warm Nuru gel</li>
+          <li>🧴 Slow, sensual flow that relaxes every nerve</li>
+          <li>🔥 Perfect for adults seeking luxury, intimacy, and release</li>
+          <li>🕯️ Discreet and professional — your privacy is guaranteed.</li>
+        </ul>
+        <p class="nuru-18">Strictly 18+</p>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <h2 class="section-title">All You Need to Know</h2>
+      <p class="section-sub">Answers to the questions we hear most from our clients.</p>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">Why choose MMA Massage mobile massage?<span class="faq-chevron">▾</span></button>
+          <div class="faq-answer">
+            <p>At MMA Massage, we bring peace, healing, and expert care right to your doorstep. You can trust our professional, certified, and discreet therapists to provide you with the comfort you need.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">What are the benefits of mobile massage?<span class="faq-chevron">▾</span></button>
+          <div class="faq-answer">
+            <p>Mobile massage offers convenience, comfort, and personalized service in the comfort of your own space. Whether you're at home, in a hotel, or at your workplace, our service is designed to fit your lifestyle.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">What types of massages are offered?<span class="faq-chevron">▾</span></button>
+          <div class="faq-answer">
+            <p>MMA Massage offers a variety of massages, including Swedish, relaxation, deep tissue, foot reflexology, and more.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">How do I book a massage session?<span class="faq-chevron">▾</span></button>
+          <div class="faq-answer">
+            <p>You can easily book a session by contacting us via a direct phone call, chatting with us on WhatsApp, by email, or through any of our social media handles.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">How to prepare for your massage session?<span class="faq-chevron">▾</span></button>
+          <div class="faq-answer">
+            <p>
+              <br>🕒 <b>Be On Time:</b> Please be ready 10–15 minutes before your appointment. This helps us start promptly and use your full time for the massage.
+              <br>🛏️ <b>Prepare Your Space:</b> Make sure there's a clean, quiet area for the massage. A bed or firm mat works well. Clear distractions for a peaceful session.
+              <br>🚿 <b>Freshen Up:</b> A quick shower before your massage helps you feel refreshed and enhances your comfort.
+              <br>📱 <b>Limit Distractions:</b> Put your phone on silent and let others know you'll be unavailable. This is your me-time.
+              <br>👚 <b>Wear Something Comfortable:</b> Loose, easy-to-remove clothing is best. You'll be properly covered during the session — your comfort is our priority.
+              <br>🤝 <b>Health &amp; Preferences:</b> Let us know about any allergies, injuries, or areas to avoid so we can tailor your massage to your needs.
+              <br>❌ <b>Respect Is Key:</b> At MmaMassage.ng, we provide strictly professional services. Any inappropriate behavior will result in immediate cancellation.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Is there a re-scheduling or cancellation policy?<span class="faq-chevron">▾</span></button>
+          <div class="faq-answer">
+            <p>Yes, please provide at least 12 hours notice if you need to cancel or reschedule your appointment. You can reschedule your session up to 12 hours before the appointment without any penalty. Rescheduling within 12 hours of your booking may attract a rescheduling fee or be treated as a late cancellation.</p>
+            <p>Cancellations made less than 12 hours in advance will incur a 50% cancellation fee. This helps us manage bookings fairly and compensate our therapists for their reserved time.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">What happens when the client does not show up after booking?<span class="faq-chevron">▾</span></button>
+          <div class="faq-answer">
+            <p>Clients who fail to show up without prior notice will be charged 100% of the service fee. No-shows affect our schedule and prevent others from booking that time slot.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Locate Us</h2>
+      <p class="section-sub">We're based in Owerri and travel to your preferred location.</p>
+      <div class="map-card">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.491592492226!2d7.034444510936757!3d5.493762940791884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1042594e130ced29%3A0xb226e4da32247571!2sMMA%20Massage%20NG!5e0!3m2!1sen!2sng!4v1754753623769!5m2!1sen!2sng"
+          width="100%" height="360" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <section class="section countdown-section">
+      <div class="countdown-card">
+        <h2>Book Before the Day Ends!</h2>
+        <p>Time left today:</p>
+        <div id="countdown" class="countdown-timer">00:00:00</div>
+        <a href="booking.html" class="btn btn-gold">Book A Session Now</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Video Gallery</h2>
+      <p class="section-sub">Experience the soothing art of mobile massage therapy with MMA Massage NG.</p>
+      <div class="gallery-grid">
+        <video src="videos/VIDEO-2025-06-24-18-31-08.mp4" controls>Hand massage video</video>
+        <video src="videos/feet-massage.mp4" controls>Foot massage video</video>
+        <video src="videos/VIDEO-2025-07-03-17-00-54.mp4" controls>Back massage video</video>
+        <video src="videos/client-massage.mp4" controls>Client massage video</video>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="contact-panel">
+        <h3>Contact Us</h3>
+        <p>For your booking and enquiries</p>
+        <div class="contact-actions">
+          <a href="tel:+2349040388798" class="btn btn-primary">Call Us</a>
+          <a href="https://wa.me/2349040388798" target="_blank" rel="noopener" class="btn btn-green">WhatsApp Us</a>
+          <a href="mailto:mmamassage@gmail.com" class="btn btn-slate">Email Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="photos/PHOTO-2025-06-24-19-01-30.jpg" alt="MMA Massage NG logo">
+        <p>Luxury mobile massage delivered to your home, office, or hotel in Owerri.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why">Why Us</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Reach Us</h4>
+        <ul>
+          <li><a href="tel:+2349040388798">+234 904 038 8798</a></li>
+          <li><a href="mailto:mmamassage@gmail.com">mmamassage@gmail.com</a></li>
+          <li><a href="https://wa.me/2349040388798" target="_blank" rel="noopener">WhatsApp Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 MMA Massage NG. All rights reserved.</p>
     </div>
   </footer>
 
   <div class="cookie-banner" id="cookie-banner">
-    <p>
-      We use cookies to enhance your experience. See our <a href="cookies.html">Cookies Policy</a>
-    </p>
-    
-    <div><button onclick="acceptCookies()" style="margin-left:15px;">Accept</button></div>
+    <p>We use cookies to enhance your experience. See our <a href="cookies.html">Cookies Policy</a></p>
+    <button class="btn btn-primary" onclick="acceptCookies()">Accept</button>
   </div>
 
   <script>
     function toggleMenu() {
       const navLinks = document.getElementById("navLinks");
-      navLinks.classList.toggle("show");
+      const toggle = document.querySelector(".nav-toggle");
+      const isOpen = navLinks.classList.toggle("show");
+      toggle.setAttribute("aria-expanded", isOpen);
     }
 
     function acceptCookies() {
-      localStorage.setItem('cookiesAccepted', 'true');
-      document.getElementById('cookie-banner').style.display = 'none';
+      localStorage.setItem("cookiesAccepted", "true");
+      document.getElementById("cookie-banner").style.display = "none";
     }
 
-    window.onload = function() {
-      if (!localStorage.getItem('cookiesAccepted')) {
-        document.getElementById('cookie-banner').style.display = 'block';
+    window.onload = function () {
+      if (!localStorage.getItem("cookiesAccepted")) {
+        document.getElementById("cookie-banner").style.display = "block";
       }
     };
 
-   
-    document.querySelectorAll('.faq-question').forEach(button => {
-      button.addEventListener('click', () => {
-        const answer = button.nextElementSibling;
-        
-        // Close other answers
-        document.querySelectorAll('.faq-answer').forEach(item => {
-          if (item !== answer) {
-            item.style.display = 'none';
-          }
+    document.querySelectorAll(".faq-question").forEach(function (button) {
+      button.addEventListener("click", function () {
+        const item = button.parentElement;
+        const isActive = item.classList.contains("active");
+        document.querySelectorAll(".faq-item").forEach(function (i) {
+          i.classList.remove("active");
         });
-
-        // Toggle the clicked answer
-        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        if (!isActive) {
+          item.classList.add("active");
+        }
       });
     });
 
@@ -309,10 +345,10 @@ Cancellations made less than 12 hours in advance will incur a 50% cancellation f
         const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-        document.getElementById('countdown').textContent =
-          `${hours.toString().padStart(2, '0')}:` +
-          `${minutes.toString().padStart(2, '0')}:` +
-          `${seconds.toString().padStart(2, '0')}`;
+        document.getElementById("countdown").textContent =
+          hours.toString().padStart(2, "0") + ":" +
+          minutes.toString().padStart(2, "0") + ":" +
+          seconds.toString().padStart(2, "0");
       }
 
       updateCountdown();
