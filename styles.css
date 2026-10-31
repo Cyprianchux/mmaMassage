@@ -722,9 +722,13 @@ section[id] {
 
 /* Footer */
 .site-footer {
-  background: var(--green-950);
+  background:
+    radial-gradient(circle at 12% 0%, rgba(212, 175, 55, 0.14), transparent 45%),
+    radial-gradient(circle at 92% 100%, rgba(32, 129, 63, 0.22), transparent 50%),
+    var(--green-950);
   color: #cfe0d5;
   margin-top: 3rem;
+  border-top: 3px solid var(--gold);
 }
 
 .footer-grid {
@@ -736,18 +740,92 @@ section[id] {
   margin-inline: auto;
 }
 
+.footer-brand {
+  max-width: 330px;
+}
+
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  text-decoration: none;
+  margin-bottom: 1.15rem;
+}
+
 .footer-brand img {
-  width: 78px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
-  margin-bottom: 1rem;
-  border: 2px solid rgba(212, 175, 55, 0.5);
+  object-fit: cover;
+  background: rgba(255, 255, 255, 0.04);
+  border: 2px solid rgba(212, 175, 55, 0.6);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-logo:hover img {
+  border-color: var(--gold);
+  transform: translateY(-2px);
+}
+
+.footer-logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-wordmark {
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  font-size: 1.05rem;
+  line-height: 1.1;
+}
+
+.footer-wordmark span {
+  color: var(--gold);
+}
+
+.footer-tagline {
+  margin-top: 0.3rem;
+  color: var(--gold);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
 }
 
 .footer-brand p {
-  color: #9fb8a8;
+  color: #a9c1b1;
   font-size: 0.95rem;
+  line-height: 1.65;
   margin: 0;
-  max-width: 260px;
+}
+
+.footer-highlights {
+  list-style: none;
+  margin: 1.2rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.footer-highlights li {
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: 0.9rem;
+  color: #cfe0d5;
+}
+
+.footer-highlights li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.16);
 }
 
 .footer-col h4 {
@@ -1091,6 +1169,20 @@ section[id] {
 
   .brand-wordmark {
     font-size: 0.9rem;
+  }
+
+  .footer-brand {
+    max-width: none;
+  }
+
+  .footer-brand img {
+    width: 56px;
+    height: 56px;
+  }
+
+  .footer-tagline {
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
   }
 
   .hero-actions .btn,
